@@ -1,0 +1,173 @@
+.container{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-columns: 400px 400px;
+
+}
+.play-area{
+    width: 500px;
+    height: 560px;
+    position: relative;
+    margin: 6px auto;
+    text-align: center;
+    border-radius: 20px;
+    color: antiquewhite;
+    background-color: #2d0f0f;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+}
+.row{
+   display: flex;
+   flex-direction: row;
+   gap: 5px;
+   text-align: center;
+   justify-content: center;
+   
+}
+
+.robot-img{
+position: relative;
+background: #000;
+margin: 6px;
+border-radius: 30px;
+height: 560px;
+width: 400px;
+}
+
+
+.button-option{
+    margin-top: 5px;
+    background: #ffffff;
+    height: 60px;
+    width: 60px;
+    border: none;
+    border-radius: 8px;
+    font-size: 30px;
+    color: #d161ff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.restart{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #fff;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.restart:hover{
+   background-color: #787878;
+}
+  
+.popup{
+    background: linear-gradient(135deg, #797975, #000000);
+    height: 50%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 20%;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    font-size: 30px;
+  }
+  .popup.hide {
+    display: none;
+  }
+  .popup p{
+    background-color: #fff;
+    color: #2d0f0f;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 5px 20px;
+
+  }
+  .popup button{
+    background: transparent;
+    border: 2px solid #fff;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  .info{
+    position: absolute;
+    left: 27%;
+    top: 80%;
+  }
+  .info button{
+    font-size: 20px;
+    padding: 5px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .score-info {
+    background: linear-gradient(135deg, #797975, #000000);
+    height: 250px;
+    width: 300px;
+    border-radius: 20px;
+    position: absolute;
+    left: 20%;
+    bottom: 20%;
+    display: grid;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    grid-template-columns: 100px 100px;
+    gap: 2em;
+    font-size: 10px;
+    visibility: hidden;
+    transition: transform 1s;
+  }
+
+
+
+  .scorehide{
+    visibility: visible;
+    transform: scale(1.2);
+  }
+  .box{
+    background-color: #fff;
+    color: #000000;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 100px;
+  }
+  .score-info .closebtn{
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: none;
+    justify-content: center;
+    position: absolute;
+    left: 18%;
+    top: 83%;
+  }
+  .score-info .resetbtn{
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: none;
+    justify-content: center;
+    position: absolute;
+    left: 52%;
+    top: 83%;
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <div class="container">
+          <div class="robot-img">
+<spline-viewer loading-anim-type="spinner-small-dark" url="https://prod.spline.design/T7TyHGrt7VhuqVKK/scene.splinecode"></spline-viewer>
+          </div>
+            <div class="play-area">
+                <h1>TIC TOE GAME</h1>
+                <h3 class="player">X player Move</h3>
+                <div class="card">
+                  <div class="row">
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                  </div>
+                  <div class="row">
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                  </div>
+                  <div class="row">
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                    <button class="button-option"></button>
+                  </div>
+                </div>
+                <button id="restart" class="restart">Restart</button>
+               <div>
+               </div>
+                <div class="popup hide">
+                  <p id="message">Sample Message</p>
+                  <button id="new-game">New Game</button>
+              </div>
+              <div class="info">
+                <button onclick="scoreDisplay()">Score</button>
+                <button>Join me</button>
+            </div>
+            <div class="score-info">
+              <div class="box">
+                <h3>X Player Score</h3>
+                <p class="scorexplayer"></p>
+              </div>
+
+              <div class="box">
+                <h3>O Player Score</h3>
+                <p class="scoreoplayer"></p>
+              </div>
+              <button onclick="scoreDisplayhide()" class="closebtn">close</button>
+              <button onclick="resetscore(); scoreDisplayhide()" class="resetbtn">reset Score</button>
+            </div>
+           
+           </div>
+        </div>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.32/build/spline-viewer.js"></script>
+    </body>
+</html>
